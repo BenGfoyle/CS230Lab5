@@ -10,37 +10,33 @@
   <div class = "loginBox">
     <h1>Hello There</h1>
   </div>
-  <form>
-    <input placeholder = "Data ID" id = "dataID" type = "number">
-    <input placeholder= "Creator" id = "creator" type = "text">
-    <input placeholder = "Title" id = "title" type = "text">
-    <input placeholder = "Type" id = "typeOfData" type = "text">
-    <input placeholder = "Identifier" id = "dataIdentifier" type = "text">
-    <input placeholder = "Date" id = "dataDate" type = "date">
-    <input placeholder = "Langueage" id = "langueage" type = "text">
-    <input placeholder = "Description" id = "description" type = "text">
-    <button>Create Row Data Zone</button><br><br>
-  </form>
+  <form action = "table.php">
+    <input placeholder = "Data ID" id = "dataID" type = "number"><br>
+    <input placeholder= "Creator" id = "creator" type = "text"><br>
+    <input placeholder = "Title" id = "title" type = "text"><br>
+    <input placeholder = "Type" id = "typeOfData" type = "text"><br>
+    <input placeholder = "Identifier" id = "dataIdentifier" type = "text"><br>
+    <input placeholder = "Date" id = "dataDate" type = "date"><br>
+    <input placeholder = "Langueage" id = "langueage" type = "text"><br>
+    <input placeholder = "Description" id = "description" type = "text"><br>
 
-  <br><br><br>
+    <br><br><br>
 
-  <form>
+    <submit>Create Row Data Zone</submit><br><br>
+    <?php
+
+    ?>
+
     <input placeholder = "Get Data From Row..." id = "getRow" type = "number"><br>
-    <button>Retrieve Table Data Zone</button><br><br>
-  </form>
+    <submit>Retrieve Table Data Zone</submit><br><br>
 
-  <form>
     <input placeholder = "Update Data at Row..." id = "updateHere" type = "number"><br>
-    <button>Upload Row Data Zone</button><br><br>
-  </form>
+    <submit>Upload Row Data Zone</submit><br><br>
 
-  <form>
     <input placeholder = "Delete Row at..." id = "deleteHere" type = "number"><br>
-    <button>Delete Row Data Zone</button><br><br>
-  </form>
+    <submit>Delete Row Data Zone</submit><br><br>
 
-  <form>
-    <button>Undo Previous Action</button><br><br>
+    <submit>Undo Previous Action</submit><br><br>
   </form>
 
 <script></script>

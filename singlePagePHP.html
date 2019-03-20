@@ -10,7 +10,7 @@
   <div class = "loginBox">
     <h1>Hello There</h1>
   </div>
-  <form action = "table.php">
+  <form action = "create.php">
     <input placeholder = "Data ID" id = "dataID" type = "number"><br>
     <input placeholder= "Creator" id = "creator" type = "text"><br>
     <input placeholder = "Title" id = "title" type = "text"><br>
@@ -19,24 +19,37 @@
     <input placeholder = "Date" id = "dataDate" type = "date"><br>
     <input placeholder = "Langueage" id = "langueage" type = "text"><br>
     <input placeholder = "Description" id = "description" type = "text"><br>
+    <input type = "submit" value = "Create Row Data Zone"></input><br><br>
 
-    <br><br><br>
-
-    <submit>Create Row Data Zone</submit><br><br>
-    <?php
-
-    ?>
-
+  <form action = "getData.php">
     <input placeholder = "Get Data From Row..." id = "getRow" type = "number"><br>
-    <submit>Retrieve Table Data Zone</submit><br><br>
+    <input type = "submit" value = "Retrieve Table Data Zone"></input><br><br>
+  </form>
 
-    <input placeholder = "Update Data at Row..." id = "updateHere" type = "number"><br>
-    <submit>Upload Row Data Zone</submit><br><br>
+  <form action = "update.php">
+    <select onchange = "loadBox()">
+      <option value = "" id = "blankSpace" type = "text" disabled == False></option><br>
+      <option value = "ID" id = "updateHere" type = "number">ID</option><br>
+      <option value = "Creator" id = "creator" type = "text">Author</option><br>
+      <option value = "Title" id = "title" type = "text">Title</option><br>
+      <option value = "Type" id = "typeOfData" type = "text">Genre</option><br>
+      <option value = "Identifier" id = "dataIdentifier" type = "text">Identifier</option><br>
+      <option value = "Publishing Date" id = "dataDate" type = "date">Publishing Date</option><br>
+      <option value = "Langueage" id = "langueage" type = "text">Available Langueages</option><br>
+      <option value = "Description" id = "description" type = "text">Description</option><br>
+    </select>
 
+
+    <input type = "submit" value = "Update Row Data Zone"></input><br><br>
+  </form>
+
+  <form action = "delete.php">
     <input placeholder = "Delete Row at..." id = "deleteHere" type = "number"><br>
-    <submit>Delete Row Data Zone</submit><br><br>
+    <input type = "submit" value = "Delete Row Data Zone"></input><br><br>
+  </form>
 
-    <submit>Undo Previous Action</submit><br><br>
+  <form action = "undo.php">
+    <input type = "submit" value = "Undo Previous Action"></input><br><br>
   </form>
 
 <script></script>
